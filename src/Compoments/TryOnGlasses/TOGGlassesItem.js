@@ -12,7 +12,7 @@ export default class TOGGlassesItem extends Component {
 
         return (
             <div className="p-0 mx-2" style={{ width: '15%', cursor: 'pointer' }} onClick={() => { funcChangeGlasses(product) }}>
-                < img src={product.url} className="border img-fluid p-1" alt="" onMouseOver={(event) => { this.shadowOnPicture(event) }} onMouseLeave={(event) => { this.shadowOffPicture(event) }} />
+                < img src={product.url} className="border img-fluid p-1" alt={product.name} onMouseOver={(event) => { this.shadowOnPicture(event) }} onMouseLeave={(event) => { this.shadowOffPicture(event) }} />
             </div >
         )
     }
