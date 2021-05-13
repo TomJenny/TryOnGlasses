@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
-
+import TOGContent from "./Compoments/TryOnGlasses/TOGContent";
+import TOGHeader from "./Compoments/TryOnGlasses/TOGHeader";
 function App() {
+  const bgSrc = './img/background.jpg';
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{
+      background: `url(${bgSrc}) center`,
+      height: '100vh',
+      width: '100%',
+    }}>
+      <div style={{
+        background: 'rgba(0,0,0,0.4)',
+        height: '100vh',
+        width: '100%',
+      }}>
+        <TOGHeader />
+        <TOGContent />
+      </div>
     </div>
   );
 }
